@@ -24,7 +24,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-DA-Cdp">
-                                <rect key="frame" x="15" y="241" width="805" height="30"/>
+                                <rect key="frame" x="15" y="241" width="806" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="0.59508775684931503" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="1. Align the event information with the camera">
@@ -36,7 +36,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7N-pj-3bT">
-                                <rect key="frame" x="16" y="308" width="805" height="30"/>
+                                <rect key="frame" x="16" y="308" width="804" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.60292701198630139" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
                                     <fragment content="2. Take the picture and wait for parsing">
@@ -49,7 +49,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fje-gX-RpI">
-                                <rect key="frame" x="16" y="369" width="805" height="30"/>
+                                <rect key="frame" x="16" y="369" width="804" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="0.59926155821917804" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="3. Save the event in your calendar">
@@ -71,8 +71,8 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.99644361999999997" green="0.97506661029999997" blue="1" alpha="0.43308540239999999" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-Sa-2dk">
-                                <rect key="frame" x="133" y="479" width="570" height="98"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-Sa-2dk">
+                                <rect key="frame" x="141" y="511" width="89" height="100"/>
                                 <color key="backgroundColor" red="0.97784267749999998" green="1" blue="0.45840727669999998" alpha="0.3146136558" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="NDi-2F-AyI"/>
@@ -91,8 +91,8 @@
                                     <segue destination="Cag-Gt-oVw" kind="show" id="Htl-fD-LbY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G10-mN-ucS">
-                                <rect key="frame" x="397" y="440" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G10-mN-ucS">
+                                <rect key="frame" x="383" y="440" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99684995412826538" green="0.99203747510910034" blue="0.99196380376815796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -111,6 +111,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.47445455876610704" green="0.46984820382663023" blue="0.47906091370558379" alpha="0.78009952910958902" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dm7-MN-lv5">
+                                <rect key="frame" x="157" y="454" width="113" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.9439130441670962" green="1" blue="0.99170190176082218" alpha="0.78009952910958902" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
