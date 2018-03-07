@@ -22,24 +22,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Rose Water" translatesAutoresizingMaskIntoConstraints="NO" id="3eI-Y3-Ecg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-JR-Vfk">
-                                <rect key="frame" x="-10" y="105" width="329" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="4aK-Ww-GC7"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="CalCam">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99580916317875101" green="0.99000731046467039" blue="1" alpha="0.78009952910958902" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="64" name="MicrosoftSansSerif"/>
-                                            <font key="NSOriginalFont" size="57" name="Papyrus"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.47445455876610704" green="0.46984820382663023" blue="0.47906091370558379" alpha="0.78009952910958902" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-DA-Cdp">
                                 <rect key="frame" x="15" y="241" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.83263843910000002" green="0.83263843910000002" blue="0.83263843910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -114,18 +96,30 @@
                                 <color key="textColor" red="0.99684995412826538" green="0.99203747510910034" blue="0.99196380376815796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-shutter" translatesAutoresizingMaskIntoConstraints="NO" id="r2T-WG-ITR">
-                                <rect key="frame" x="279" y="124" width="56" height="59"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-JR-Vfk">
+                                <rect key="frame" x="15" y="104" width="329" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="4aK-Ww-GC7"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="CalCam">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99580916317875101" green="0.99000731046467039" blue="1" alpha="0.78009952910958902" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="64" name="MicrosoftSansSerif"/>
+                                            <font key="NSOriginalFont" size="57" name="Papyrus"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.47445455876610704" green="0.46984820382663023" blue="0.47906091370558379" alpha="0.78009952910958902" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6fv-Sa-2dk" firstAttribute="top" secondItem="G10-mN-ucS" secondAttribute="bottom" constant="18" id="05f-RH-2Fy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6fv-Sa-2dk" secondAttribute="bottom" constant="90" id="2Yb-ng-i1O"/>
                             <constraint firstItem="sSv-JR-Vfk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="Adp-RK-zPr"/>
-                            <constraint firstItem="r2T-WG-ITR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="279" id="BQA-Y4-KtQ"/>
-                            <constraint firstItem="7Nz-DA-Cdp" firstAttribute="top" secondItem="r2T-WG-ITR" secondAttribute="bottom" constant="58" id="CKO-aI-Zp7"/>
-                            <constraint firstItem="r2T-WG-ITR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="Fne-U8-enU"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="centerX" secondItem="W2q-ma-9ZL" secondAttribute="centerX" id="KT6-Pp-Vox"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="trailing" secondItem="fje-gX-RpI" secondAttribute="trailing" id="LN9-1g-YmK"/>
                             <constraint firstItem="sSv-JR-Vfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYP-ru-B6b"/>
@@ -138,7 +132,6 @@
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="leading" secondItem="fje-gX-RpI" secondAttribute="leading" id="gp1-kb-jbt"/>
                             <constraint firstItem="6fv-Sa-2dk" firstAttribute="centerX" secondItem="W2q-ma-9ZL" secondAttribute="centerX" id="nCS-yB-GnO"/>
                             <constraint firstItem="sSv-JR-Vfk" firstAttribute="centerX" secondItem="3eI-Y3-Ecg" secondAttribute="centerX" id="q6m-wL-uvA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r2T-WG-ITR" secondAttribute="trailing" constant="40" id="tjE-h7-PdW"/>
                             <constraint firstItem="7Nz-DA-Cdp" firstAttribute="top" secondItem="W2q-ma-9ZL" secondAttribute="bottom" constant="26" id="vDi-iH-qns"/>
                             <constraint firstItem="6fv-Sa-2dk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="wNC-GO-VHG"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="top" secondItem="7Nz-DA-Cdp" secondAttribute="bottom" constant="37" id="x1B-Li-6G3"/>
@@ -237,7 +230,6 @@
     </scenes>
     <resources>
         <image name="Rose Water" width="900" height="1440"/>
-        <image name="camera-shutter" width="219" height="223"/>
         <image name="loginbutton" width="512" height="512"/>
     </resources>
 </document>
