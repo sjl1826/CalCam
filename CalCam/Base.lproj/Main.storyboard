@@ -19,12 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Rose Water" translatesAutoresizingMaskIntoConstraints="NO" id="3eI-Y3-Ecg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rose Water" translatesAutoresizingMaskIntoConstraints="NO" id="3eI-Y3-Ecg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-DA-Cdp">
-                                <rect key="frame" x="15" y="241" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.83263843910000002" green="0.83263843910000002" blue="0.83263843910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="15" y="241" width="805" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.59508775684931503" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="1. Align the event information with the camera">
                                         <attributes>
@@ -35,8 +36,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7N-pj-3bT">
-                                <rect key="frame" x="16" y="308" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.83263843910000002" green="0.83263843910000002" blue="0.83263843910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="308" width="805" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.60292701198630139" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
                                     <fragment content="2. Take the picture and wait for parsing">
                                         <attributes>
@@ -48,8 +49,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fje-gX-RpI">
-                                <rect key="frame" x="16" y="369" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.83263843910000002" green="0.83263843910000002" blue="0.83263843910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="369" width="805" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.59926155821917804" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="3. Save the event in your calendar">
                                         <attributes>
@@ -71,7 +72,7 @@
                                 <color key="shadowColor" red="0.99644361999999997" green="0.97506661029999997" blue="1" alpha="0.43308540239999999" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-Sa-2dk">
-                                <rect key="frame" x="133" y="479" width="108" height="98"/>
+                                <rect key="frame" x="133" y="479" width="570" height="98"/>
                                 <color key="backgroundColor" red="0.97784267749999998" green="1" blue="0.45840727669999998" alpha="0.3146136558" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="NDi-2F-AyI"/>
@@ -91,16 +92,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G10-mN-ucS">
-                                <rect key="frame" x="166" y="440" width="42" height="21"/>
+                                <rect key="frame" x="397" y="440" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99684995412826538" green="0.99203747510910034" blue="0.99196380376815796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-JR-Vfk">
-                                <rect key="frame" x="15" y="104" width="329" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="4aK-Ww-GC7"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-JR-Vfk">
+                                <rect key="frame" x="17" y="104" width="329" height="88"/>
                                 <attributedString key="attributedText">
                                     <fragment content="CalCam">
                                         <attributes>
@@ -119,19 +117,18 @@
                         <constraints>
                             <constraint firstItem="6fv-Sa-2dk" firstAttribute="top" secondItem="G10-mN-ucS" secondAttribute="bottom" constant="18" id="05f-RH-2Fy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6fv-Sa-2dk" secondAttribute="bottom" constant="90" id="2Yb-ng-i1O"/>
-                            <constraint firstItem="sSv-JR-Vfk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="Adp-RK-zPr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sSv-JR-Vfk" secondAttribute="trailing" constant="29" id="F09-tU-kgv"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="centerX" secondItem="W2q-ma-9ZL" secondAttribute="centerX" id="KT6-Pp-Vox"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="trailing" secondItem="fje-gX-RpI" secondAttribute="trailing" id="LN9-1g-YmK"/>
-                            <constraint firstItem="sSv-JR-Vfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYP-ru-B6b"/>
+                            <constraint firstItem="7Nz-DA-Cdp" firstAttribute="top" secondItem="sSv-JR-Vfk" secondAttribute="bottom" constant="49" id="OVN-jw-2jJ"/>
                             <constraint firstItem="7Nz-DA-Cdp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Pw7-0h-Ccr"/>
                             <constraint firstItem="W2q-ma-9ZL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="SEK-EH-8rF"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VyJ-IE-x4N"/>
                             <constraint firstItem="7Nz-DA-Cdp" firstAttribute="centerX" secondItem="G10-mN-ucS" secondAttribute="centerX" id="Zyx-fw-7mU"/>
-                            <constraint firstItem="W2q-ma-9ZL" firstAttribute="centerX" secondItem="sSv-JR-Vfk" secondAttribute="centerX" id="cba-ee-U0c"/>
-                            <constraint firstItem="sSv-JR-Vfk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="d9a-do-6cO"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="leading" secondItem="fje-gX-RpI" secondAttribute="leading" id="gp1-kb-jbt"/>
                             <constraint firstItem="6fv-Sa-2dk" firstAttribute="centerX" secondItem="W2q-ma-9ZL" secondAttribute="centerX" id="nCS-yB-GnO"/>
-                            <constraint firstItem="sSv-JR-Vfk" firstAttribute="centerX" secondItem="3eI-Y3-Ecg" secondAttribute="centerX" id="q6m-wL-uvA"/>
+                            <constraint firstItem="sSv-JR-Vfk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="roM-iO-jxj"/>
+                            <constraint firstItem="sSv-JR-Vfk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="v13-TX-xfn"/>
                             <constraint firstItem="7Nz-DA-Cdp" firstAttribute="top" secondItem="W2q-ma-9ZL" secondAttribute="bottom" constant="26" id="vDi-iH-qns"/>
                             <constraint firstItem="6fv-Sa-2dk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="wNC-GO-VHG"/>
                             <constraint firstItem="p7N-pj-3bT" firstAttribute="top" secondItem="7Nz-DA-Cdp" secondAttribute="bottom" constant="37" id="x1B-Li-6G3"/>
@@ -156,12 +153,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rose Water" translatesAutoresizingMaskIntoConstraints="NO" id="88D-Z2-enN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdK-fK-CAd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdK-fK-CAd">
                                 <rect key="frame" x="39" y="243" width="296" height="65"/>
-                                <color key="backgroundColor" red="0.88510202240000002" green="1" blue="0.94755870440000001" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="+ Create New Event">
-                                    <color key="titleShadowColor" red="0.97784267749999998" green="1" blue="0.45840727669999998" alpha="0.3146136558" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.93810203436088768" green="1" blue="0.93851926295863186" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+ Create New Event">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="MicrosoftSansSerif"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="openCamera:" destination="Cag-Gt-oVw" eventType="touchUpInside" id="iTt-Ix-tMM"/>
