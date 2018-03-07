@@ -12,7 +12,7 @@
 		BD8C1F6B205074E300E70B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C1F69205074E300E70B1A /* Main.storyboard */; };
 		BD8C1F6D205074E300E70B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8C1F6C205074E300E70B1A /* Assets.xcassets */; };
 		BD8C1F70205074E300E70B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C1F6E205074E300E70B1A /* LaunchScreen.storyboard */; };
-		BD8C1F782050757D00E70B1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C1F772050757D00E70B1A /* CameraViewController.swift */; };
+		BD8C1F7A2050A95400E70B1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C1F792050A95400E70B1A /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		BD8C1F6C205074E300E70B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8C1F6F205074E300E70B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8C1F71205074E300E70B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD8C1F772050757D00E70B1A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = "../../nachenbois copy/nachenbois/CameraViewController.swift"; sourceTree = "<group>"; };
+		BD8C1F792050A95400E70B1A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../../CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				BD8C1F65205074E300E70B1A /* AppDelegate.swift */,
 				BD8C1F67205074E300E70B1A /* ViewController.swift */,
-				BD8C1F772050757D00E70B1A /* CameraViewController.swift */,
+				BD8C1F792050A95400E70B1A /* CameraViewController.swift */,
 				BD8C1F69205074E300E70B1A /* Main.storyboard */,
 				BD8C1F6C205074E300E70B1A /* Assets.xcassets */,
 				BD8C1F6E205074E300E70B1A /* LaunchScreen.storyboard */,
@@ -140,8 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8C1F68205074E300E70B1A /* ViewController.swift in Sources */,
+				BD8C1F7A2050A95400E70B1A /* CameraViewController.swift in Sources */,
 				BD8C1F66205074E300E70B1A /* AppDelegate.swift in Sources */,
-				BD8C1F782050757D00E70B1A /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
