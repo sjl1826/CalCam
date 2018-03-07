@@ -26,7 +26,7 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
             self.present(alert, animated: true, completion: nil)
         }
     }
-
+    
     @IBAction func openCamera(_ sender: UIButton) {
         cameraop()
     }
@@ -41,6 +41,10 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             myImg.contentMode = .scaleToFill
             myImg.image = pickedImage
+            // Convert image to base 64
+            let b64Str: String = imgToB64(img: pickedImage)
+            // Pass to Google OCR
+            GoogleOCRHandler.postToGoogle(imageData: b64Str, callback: handleOCR)
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
@@ -51,8 +55,8 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     
-        @IBAction func addtoCalendar(_ sender: Any) {
-
+    @IBAction func addtoCalendar(_ sender: Any) {
+        
         let eventStore:EKEventStore = EKEventStore()
         eventStore.requestAccess(to: .event) {(granted, error) in
             
@@ -75,13 +79,22 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
                 }catch let error as NSError{
                     print("error")
                 }
-
+                
             }
             else{
                 print("error : \(error)")
             }
         }
     }
-
+    
+    func imgToB64(img: UIImage) -> String {
+        let imgData: Data = UIImagePNGRepresentation(img)!
+        return imgData.base64EncodedString()
     }
+    
+    func handleOCR(text: String) {
+        print(text)
+    }
+    
+}
 
