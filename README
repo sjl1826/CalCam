@@ -1,0 +1,4 @@
+CalCam is an iOS Application that uses Google Vision and Natural Language Processing to parse images of event flyers
+and add such events to your Apple calendar. Through different calls made to the built-in iPhone camera to changing the image
+to a base 64 file, we were able to analyze the data and create Event Objects through iOS SDK's EventKit to add these events
+to the calendar.
