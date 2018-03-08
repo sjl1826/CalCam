@@ -90,18 +90,18 @@ class NLPNetworkingObject
         
         
         //Apple NLP Code
-     
+        
         let a = CalEvent()
         return a
     }
     
-  
+    
     
     static func coreNLP(ocrText: String)->CalEvent
     {
         var outEvent = CalEvent()
-
-//        var gvText = "BRUIN ENTREPRENEURS PRESENTS STARTUP LABS INFO SESSION 10/2 AT 6 - 7 PM AT Los Angeles Museum"
+        
+        //        var gvText = "BRUIN ENTREPRENEURS PRESENTS STARTUP LABS INFO SESSION 10/2 AT 6 - 7 PM AT Los Angeles Museum"
         var gvText = ocrText
         var baseDateStr: String?
         //Enumerate
@@ -123,10 +123,10 @@ class NLPNetworkingObject
             if let tag = tag {
                 let word = (eventText as NSString).substring(with: tokenRange)
                 if(tag.rawValue == "Noun" && titleOngoing){
-                print("Noun!")
-                eventTitle.append(word + " ")
+                    print("Noun!")
+                    eventTitle.append(word + " ")
                 }
-                
+                    
                 else if(tag.rawValue != "Noun")
                 {
                     titleOngoing = false
@@ -170,8 +170,8 @@ class NLPNetworkingObject
                 {
                     endTime.append(word)
                 }
-               
-            
+                
+                
                 print("\(word): \(tag)")
             }
         }
@@ -179,7 +179,7 @@ class NLPNetworkingObject
         outEvent.m_title = eventTitle
         print("Event Title: \(eventTitle)")
         
-
+        
         print("Start Time: \(startTime)")
         print("End Time: \(endTime)")
         var testString : NSString = gvText as NSString
@@ -198,7 +198,7 @@ class NLPNetworkingObject
                 print("Duration is: \(dur)")
                 print("date: \(matchString)")
                 
-               // dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssz"
+                // dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssz"
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy/MM/dd"
                 baseDateStr = dateFormatter.string(from: da!)
@@ -210,32 +210,32 @@ class NLPNetworkingObject
                 if(isPM == true)
                 {
                     let strTime = Int(startTime)
-                    if(strTime != 0)
+                    if(strTime != nil)
                     {
                         startTime = String((12 + strTime!))
                     }
-                    
+                        
                     else
                     {
-                        dateFormatter.dateFormat="HH:mm:ss"
-
+                        dateFormatter.dateFormat="HH"
+                        
                         startTime = dateFormatter.string(from: da!)
                     }
                     
                     let eTime = Int(endTime)
-                    if(eTime != 0)
+                    if(eTime != nil)
                     {
                         endTime = String((12 + eTime!))
                     }
                         
                     else
                     {
-                        dateFormatter.dateFormat="HH:mm:ss"
+                        dateFormatter.dateFormat="HH"
                         
                         endTime = dateFormatter.string(from: da!)
                     }
                     
-                
+                    
                 }
                 
                 startTime = baseDateStr! + " " + startTime + ":00"
@@ -243,18 +243,18 @@ class NLPNetworkingObject
                 
                 print("Final Start \(startTime)")
                 print("Final End \(endTime)")
-//                dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
-//                outEvent.m_startTime = dateFormatter.date(from: startTime)
-//                outEvent.m_endTime = dateFormatter.date(from: endTime)
-//                print(outEvent.m_startTime)
-//                print(outEvent.m_endTime)
+                //                dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+                //                outEvent.m_startTime = dateFormatter.date(from: startTime)
+                //                outEvent.m_endTime = dateFormatter.date(from: endTime)
+                //                print(outEvent.m_startTime)
+                //                print(outEvent.m_endTime)
                 
                 outEvent.m_startTime = startTime
                 outEvent.m_endTime = endTime
                 outEvent.m_date = baseDateStr
                 
-
-            
+                
+                
                 
             }else if match?.resultType == .phoneNumber {
                 outEvent.m_notes?.append("Phone No: \(matchString)\n")
@@ -279,7 +279,7 @@ class NLPNetworkingObject
             
         })
         
-                return outEvent
+        return outEvent
     }
     
     
