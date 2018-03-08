@@ -13,8 +13,8 @@
 		BD8C1F6D205074E300E70B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8C1F6C205074E300E70B1A /* Assets.xcassets */; };
 		BD8C1F70205074E300E70B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C1F6E205074E300E70B1A /* LaunchScreen.storyboard */; };
 		BD8C1F7A2050A95400E70B1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C1F792050A95400E70B1A /* CameraViewController.swift */; };
-		BDAB82CF2050B3EB000BB856 /* GoogleOCRHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB82CE2050B3EB000BB856 /* GoogleOCRHandler.swift */; };
 		BDAB82D12050CD3C000BB856 /* networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB82D02050CD3C000BB856 /* networking.swift */; };
+		BDAB82D32050CDA6000BB856 /* GoogleOCRHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB82D22050CDA5000BB856 /* GoogleOCRHandler.swift */; };
 		FCBDA17E2DAC6078EF83384C /* Pods_CalCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADAACD1301AB0C6147C99FA /* Pods_CalCam.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +28,8 @@
 		BD8C1F6F205074E300E70B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8C1F71205074E300E70B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8C1F792050A95400E70B1A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../../CameraViewController.swift; sourceTree = "<group>"; };
-		BDAB82CE2050B3EB000BB856 /* GoogleOCRHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleOCRHandler.swift; sourceTree = "<group>"; };
 		BDAB82D02050CD3C000BB856 /* networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = networking.swift; path = ../../networking.swift; sourceTree = "<group>"; };
+		BDAB82D22050CDA5000BB856 /* GoogleOCRHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleOCRHandler.swift; path = ../../../Downloads/GoogleOCRHandler.swift; sourceTree = "<group>"; };
 		C89E583EBB8BAB31E6D38472 /* Pods-CalCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalCam.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalCam/Pods-CalCam.release.xcconfig"; sourceTree = "<group>"; };
 		F601C8E930F5CDDCEE2E2861 /* Pods-CalCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalCam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalCam/Pods-CalCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 				BD8C1F67205074E300E70B1A /* ViewController.swift */,
 				BD8C1F792050A95400E70B1A /* CameraViewController.swift */,
 				BD8C1F69205074E300E70B1A /* Main.storyboard */,
-				BDAB82CE2050B3EB000BB856 /* GoogleOCRHandler.swift */,
+				BDAB82D22050CDA5000BB856 /* GoogleOCRHandler.swift */,
 				BDAB82D02050CD3C000BB856 /* networking.swift */,
 				BD8C1F6C205074E300E70B1A /* Assets.xcassets */,
 				BD8C1F6E205074E300E70B1A /* LaunchScreen.storyboard */,
@@ -226,11 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAB82CF2050B3EB000BB856 /* GoogleOCRHandler.swift in Sources */,
 				BDAB82D12050CD3C000BB856 /* networking.swift in Sources */,
 				BD8C1F68205074E300E70B1A /* ViewController.swift in Sources */,
 				BD8C1F7A2050A95400E70B1A /* CameraViewController.swift in Sources */,
 				BD8C1F66205074E300E70B1A /* AppDelegate.swift in Sources */,
+				BDAB82D32050CDA6000BB856 /* GoogleOCRHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
