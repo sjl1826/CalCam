@@ -43,12 +43,6 @@
                                     <segue destination="Cag-Gt-oVw" kind="show" id="Htl-fD-LbY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G10-mN-ucS">
-                                <rect key="frame" x="383" y="440" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99684995412826538" green="0.99203747510910034" blue="0.99196380376815796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-JR-Vfk">
                                 <rect key="frame" x="17" y="104" width="329" height="76"/>
                                 <attributedString key="attributedText">
@@ -142,7 +136,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6fv-Sa-2dk" firstAttribute="top" secondItem="G10-mN-ucS" secondAttribute="bottom" constant="18" id="05f-RH-2Fy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6fv-Sa-2dk" secondAttribute="bottom" constant="90" id="2Yb-ng-i1O"/>
                             <constraint firstItem="1Ke-ha-UHD" firstAttribute="centerX" secondItem="W2q-ma-9ZL" secondAttribute="centerX" id="321-Th-qp3"/>
                             <constraint firstItem="baM-jm-mzx" firstAttribute="top" secondItem="1Ke-ha-UHD" secondAttribute="bottom" constant="25" id="6vD-T1-wzy"/>
